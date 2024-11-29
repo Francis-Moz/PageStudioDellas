@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Secao--Inicio{
+    background-color: #fee6f3;
+}
+#LogoPagina{
+    width: 150px;
+}
