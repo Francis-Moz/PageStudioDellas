@@ -2,9 +2,34 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
 #Secao--Inicio{
     background-color: #fee6f3;
+    width: 1280px; 
+    height: 835px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+#Menu--Lista{
+    width: 725px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.Lista--Item{
+    font-family:inter;
+    font-size: 0.75em;
 }
 #LogoPagina{
     width: 150px;
+}
+#conteudoHeader{
+    display: flex;
 }
