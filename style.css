@@ -14,6 +14,7 @@ body{
     display: flex;
     flex-direction:column ;
     align-items: center;
+    position: relative;
 }
 #Menu--Lista{
     width: 725px;
@@ -31,5 +32,48 @@ body{
     width: 150px;
 }
 #conteudoHeader{
+    height: 100%;
+    position: absolute;
     display: flex;
+    align-items: center;
+}
+
+#conteudoHeader--txt{
+    width: 470px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #471e59;
+}
+#conteudoHeader--txt h1{
+    font-family: yellowtail;
+    font-size: 3em;
+}
+#conteudoHeader--txt p{
+    font-family: inter;
+    font-size: 1em;
+}
+#inicio--Efeito{
+    position: absolute;
+    bottom: 0;    
+}
+.Secao--titulo{
+    text-align: center;
+    font-size: 2em;
+    font-family: inria serif;
+    color: #6c2d88;
+}
+#Secao--NossaEspecialidade{
+    width: 1280px;
+    height:800px;
+}
+#NossaEspecialidade--Container{
+    display: flex;
+}
+.Especialidades{
+    width: 190px;
+}
+.Especialidades--img{
+    width: 190px;
 }
