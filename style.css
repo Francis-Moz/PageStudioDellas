@@ -67,13 +67,61 @@ body{
 #Secao--NossaEspecialidade{
     width: 1280px;
     height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 #NossaEspecialidade--Container{
+    width: 1034px;
     display: flex;
+    justify-content: space-between;
 }
 .Especialidades{
     width: 190px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .Especialidades--img{
     width: 190px;
+}
+.Especialidades--titulo{
+    font-size: 1em;
+    font-family: inria serif;
+    text-align: center;
+    color: #471e59;
+}
+.Especialidades--txt{
+    font-size: 0.9em;
+    font-family: inria serif;
+    text-align: center;
+}
+#Secao--QuemSomos{
+    width: 1280px;
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+#Container--QuemSomos{
+    display: flex;
+    justify-content: space-between;
+}
+#fotoQuemSomos{
+    width: 392px;
+    box-shadow: 4px 4px 4px #6c2d88;
+}
+#txtQuemSomos{
+    width: 515px;
+    font-size: 1em;
+    font-family: istok web;
+}
+#Linha--txt{
+    width: 275px;
+    height: 2px;
+    background-color :#6c2d88;
 }
