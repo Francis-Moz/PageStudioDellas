@@ -105,9 +105,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 #Container--QuemSomos{
+    width: 1032px;
     display: flex;
     justify-content: space-between;
 }
@@ -172,4 +174,69 @@ body{
     height: 260px;
     position: absolute;
     bottom: 0;
+}
+#Secao--Contatos{
+    width: 1280px;
+    height: 600px;
+    background-color: #fee6f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#Container--Contatos{
+    width: 1032px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Contatos{
+    width: 500px;
+    height: 310px;
+    background-image: url(Assets/logoMedio.png);
+    background-position: center;
+}
+#fundo--img{
+    width: 500px;
+    height: 310px;
+    background-color: #fee6f3e0;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-contatoLocal{
+    font-size: 1.1em;
+    font-family: Inter;
+}
+.endereco--redes{
+    font-size: 1em;
+    font-family: Inter;
+}
+.mens--extra{
+    font-family: Inter;
+    font-size: 0.8em;
+}
+.containerWAInstaGeral{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Inf-WAInsta{
+    display: flex;
+    align-items: center;
+}
+.Inf-WAInsta img{
+    width: 25px;
+}
+.img--localizacao{
+    width: 480px;
+}
+#desenvolvedor{
+    width: 1032px;
+    padding-top: 15px;
+    border-top-style:solid ;
+    border-color: #6c2d88;
+    font-family: Inter;
+    font-size: 0.8em;
+    text-align: center;
 }
