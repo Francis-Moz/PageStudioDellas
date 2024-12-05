@@ -30,7 +30,7 @@ body{
 .hamburger{
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid #000;
     cursor: pointer;
     display: none;
 }
@@ -40,7 +40,7 @@ body{
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     margin-top: 5px;
 }
 #Menu--Lista{
@@ -55,9 +55,14 @@ body{
     font-family:inter;
     font-size: 0.75em;
 }
+.Lista--Item a{
+    text-decoration: none;
+    color: #471e59;
+    font-weight: 600;
+    padding-block:16px;
+}
 #LogoPagina{
     width: 150px;
-
 }
 #conteudoHeader{
     width: 1034px;
@@ -271,7 +276,5 @@ body{
 }
 
 @media (max-width:769px) {
-    .hamburger { 
-        display: block;
-    }
+    
 }
