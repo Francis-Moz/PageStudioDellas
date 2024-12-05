@@ -6,18 +6,44 @@ body{
     display: flex;
     flex-direction: column;
     align-items:  center;
+    background-color: #fee6f3;
+}
+#containetConteudo-Body{
+    background-color: #ffffff;
 }
 #Secao--Inicio{
     background-color: #fee6f3;
     width: 1280px; 
     height: 835px;
     display: flex;
-    flex-direction:column ;
     align-items: center;
     position: relative;
 }
+#Inicio--Menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+.hamburger{
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    display: none;
+}
+.hamburger::before,
+.hamburger::after{
+    content:" ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+}
 #Menu--Lista{
-    width: 725px;
+    width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,6 +56,7 @@ body{
 }
 #LogoPagina{
     width: 150px;
+
 }
 #conteudoHeader{
     height: 100%;
@@ -239,4 +266,10 @@ body{
     font-family: Inter;
     font-size: 0.8em;
     text-align: center;
+}
+
+@media (max-width:769px) {
+    .hamburger { 
+        display: block;
+    }
 }
