@@ -8,43 +8,35 @@ body{
     align-items:  center;
     background-color: #fee6f3;
 }
-#containetConteudo-Body{
+#containerConteudo-Body{
+    width: 100%;
+    max-width: 1280px;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
-#Secao--Inicio{
-    background-color: #fee6f3;
-    width: 1280px; 
+#Secao--Header{
+    width: 100%;
+    max-width: 1280px;
     height: 835px;
+    background-color: #fee6f3;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 #Inicio--Menu{
-    width: 1034px;
+    width: 100%;
+    max-width: 1034px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: 0;
 }
-.hamburger{
-    border: none;
-    background: none;
-    border-top: 3px solid #000;
-    cursor: pointer;
-    display: none;
-}
-.hamburger::before,
-.hamburger::after{
-    content:" ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin-top: 5px;
-}
 #Menu--Lista{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,15 +52,17 @@ body{
     color: #471e59;
     font-weight: 600;
     padding-block:16px;
+    opacity:(0);
 }
 #LogoPagina{
     width: 150px;
 }
 #conteudoHeader{
-    width: 1034px;
-    height: 100%;
+    width: 100%;
+    max-width: 1034px;
     position: absolute;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -276,5 +270,38 @@ body{
 }
 
 @media (max-width:769px) {
-    
+    #Secao--Header{
+        width: 100%;
+        max-width: 1280px;
+        height: 100vh;
+    }
+    #conteudoHeader{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+   #conteudoHeader--txt{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #471e59;
+    }
+    #conteudoHeader--txt h1{
+    font-family: yellowtail;
+    font-size: 2.5em;
+    }
+    #conteudoHeader--txt p{
+    font-family: inter;
+    font-size: 1em;
+    }
+    #conteudoHeader--img img{
+        width: 450px;
+    }
+    #inicio--Efeito{
+        width: 100vw;
+        height: 14;
+    }
 }
