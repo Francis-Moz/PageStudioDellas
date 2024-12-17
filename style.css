@@ -72,10 +72,14 @@ body{
 #conteudoHeader--txt{
     width: 470px;
     height: 230px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: #471e59;
+}
+#conteudoHeader--img{
+    margin-right: 10px;
 }
 #conteudoHeader--txt h1{
     font-family: yellowtail;
@@ -188,23 +192,28 @@ body{
     align-self: flex-end;
 }
 .OQueMaisFazemos--Servicos{
-    width: 185px;
+    width: 190px;
     height: 300px;
-    background-color: #d4feeb;
-    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d4feeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .Servicos--titulo{
     font-size: 1em;
     font-family: inria serif;
     color: #471e59;
     text-align: center;
-    margin-top: 7px;
 }
 .Servicos--imagem{
-    width: 185px;
+    width: 175px;
     height: 260px;
-    position: absolute;
-    bottom: 0;
+    border-radius: 20px;
 }
 #Secao--Contatos{
     width: 1280px;
@@ -285,7 +294,7 @@ body{
         z-index: 1000;
     }
     #Menu--Lista{
-        display: block;
+        display: none;
         position: absolute;
         width: 50vw;
         top: 0;
@@ -296,7 +305,7 @@ body{
         z-index: 500;
     }
     #Inicio--Menu.active #Menu--Lista {
-        display: none;
+        display: block;
     }
     #conteudoHeader{
         height: 70vh;
