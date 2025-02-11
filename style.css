@@ -2,19 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
+/* ESTILO DO BODY E HEADER */ 
+
 body{
     display: flex;
     flex-direction: column;
     align-items:  center;
     background-color: #fee6f3;
 }
-#containerConteudo-Body{
+#containerConteudoBody{
     width: 100%;
     max-width: 1280px;
     background-color: #ffffff;
     overflow-x: hidden;
 }
-#Secao--Header{
+#header{
     width: 100%;
     max-width: 1280px;
     height: 835px;
@@ -24,7 +27,7 @@ body{
     align-items: center;
     position: relative;
 }
-#Inicio--Menu{
+#header__menu{
     width: 100%;
     max-width: 1034px;
     display: flex;
@@ -33,10 +36,10 @@ body{
     position: absolute;
     top: 0;
 }
-#Menu--Mobile{
+#header__button--mobile{
     display: none;
 }
-#Menu--Lista{
+#menu__lista{
     width: 100%;
     max-width: 600px;
     padding: 0px 10px;
@@ -46,18 +49,18 @@ body{
     align-items: center;
     list-style: none;
 }
-.Lista--Item{
+.menu__item{
     font-family:inter;
     font-size: 0.75em;
 }
-.Lista--Item a{
+.menu__item a{
     text-decoration: none;
     color: #471e59;
     font-weight: 600;
     padding-block:16px;
     opacity:(0);
 }
-#LogoPagina{
+#header__logo{
     width: 150px;
 }
 #conteudoHeader{
@@ -69,7 +72,7 @@ body{
     align-items: center;
 }
 
-#conteudoHeader--txt{
+#conteudoHeader__txt{
     width: 470px;
     height: 230px;
     margin-left: 10px;
@@ -78,21 +81,24 @@ body{
     justify-content: space-between;
     color: #471e59;
 }
-#conteudoHeader--img{
+#conteudoHeader__img{
     margin-right: 10px;
 }
-#conteudoHeader--txt h1{
+#conteudoHeader__txt h1{
     font-family: yellowtail;
     font-size: 3em;
 }
-#conteudoHeader--txt p{
+#conteudoHeader__txt p{
     font-family: inter;
     font-size: 1em;
 }
-#inicio--Efeito{
+#conteudoHeader__imgOnda{
     position: absolute;
     bottom: 0;    
 }
+
+/* ESTILO NOSSA ESPECIALIDADE */
+
 .Secao--titulo{
     text-align: center;
     font-size: 2em;
@@ -294,18 +300,20 @@ body{
         z-index: 1000;
     }
     #Menu--Lista{
-        display: none;
         position: absolute;
         width: 50vw;
         top: 0;
         right: 0;
         background-color: white;
+        transition: ;
         display: block;
-        height: calc(100vh) ;
+        height: 100vh;
         z-index: 500;
+        visibility: hidden;
+        overflow-y: hidden;
     }
     #Inicio--Menu.active #Menu--Lista {
-        display: block;
+        visibility: visible;
     }
     #conteudoHeader{
         height: 70vh;
