@@ -99,13 +99,13 @@ body{
 
 /* ESTILO NOSSA ESPECIALIDADE */
 
-.Secao--titulo{
+.Secao__titulo{
     text-align: center;
     font-size: 2em;
     font-family: inria serif;
     color: #6c2d88;
 }
-#Secao--NossaEspecialidade{
+#secaoNossaEspecialidade{
     width: 1280px;
     height:800px;
     display: flex;
@@ -114,33 +114,36 @@ body{
     align-items: center;
     position: relative;
 }
-#NossaEspecialidade--Container{
+#secaoNossaEspecialidade__Container{
     width: 1034px;
     display: flex;
     justify-content: space-between;
 }
-.Especialidades{
+.especialidades{
     width: 190px;
     height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.Especialidades--img{
+.especialidades__img{
     width: 190px;
 }
-.Especialidades--titulo{
+.especialidades__titulo{
     font-size: 1em;
     font-family: inria serif;
     text-align: center;
     color: #471e59;
 }
-.Especialidades--txt{
+.especialidades__txt{
     font-size: 0.9em;
     font-family: inria serif;
     text-align: center;
 }
-#Secao--QuemSomos{
+
+/* ESTILO QUEM SOMOS */
+
+#secaoQuemSomos{
     width: 1280px;
     height:800px;
     display: flex;
@@ -149,32 +152,35 @@ body{
     align-items: center;
     position: relative;
 }
-#Container--QuemSomos{
+#secaoQuemSomos__Container{
     width: 1032px;
     display: flex;
     justify-content: space-between;
 }
-#fotoQuemSomos{
+#secaoQuemSomos__img{
     width: 392px;
     box-shadow: 4px 4px 4px #6c2d88;
 }
-#txtQuemSomos{
+#secaoQuemSomos__txt{
     width: 515px;
     font-size: 1em;
     font-family: istok web;
 }
-#Linha--txt{
+#secaoQuemSomos__linha{
     width: 275px;
     height: 2px;
     background-color :#6c2d88;
 }
-#Secao-OQueMaisFazemos{
+
+/* ESTILO O QUE MAIS FAZEMOS */
+
+#secaoOQueMaisFazemos{
     width: 1280px;
     height: 600px;
     background-image: url(Assets/fundo4.jpg);
     position: relative;
 }
-#fundo--branco{
+#secaoOQueMaisFazemos__fundobranco{
     width: 1280px;
     height: 600px;
     position: absolute;
@@ -184,20 +190,20 @@ body{
     align-items: center;
     background-color: #ffffffce;
 }
-#fundo--branco h3{
+#secaoOQueMaisFazemos__fundobranco h3{
     position: absolute;
     top: 10px;
 }
-#Container--OQueMaisFazemos{
+#secaoOQueMaisFazemos__container{
     width: 1032px;
     height: 362px;
     display: flex;
     justify-content:space-between;
 }
-.down{
+.secaoOQueMaisFazemos__servicos--down{
     align-self: flex-end;
 }
-.OQueMaisFazemos--Servicos{
+.secaoOQueMaisFazemos__servicos{
     width: 190px;
     height: 300px;
     background-color: #ffffff;
@@ -210,18 +216,21 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-.Servicos--titulo{
+.servicos__titulo{
     font-size: 1em;
     font-family: inria serif;
     color: #471e59;
     text-align: center;
 }
-.Servicos--imagem{
+.servicos__img{
     width: 175px;
     height: 260px;
     border-radius: 20px;
 }
-#Secao--Contatos{
+
+/* ESTILO CONTATOS*/
+
+#secaoContatos{
     width: 1280px;
     height: 600px;
     background-color: #fee6f3;
@@ -230,48 +239,48 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-#Container--Contatos{
+#secaoContatos__container{
     width: 1032px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#Contatos{
+#contatos{
     width: 500px;
     height: 310px;
     background-image: url(Assets/logoMedio.png);
     background-position: center;
 }
-#fundo--img{
+#secaoContatos__imgFundo{
     width: 500px;
     height: 310px;
     background-color: #fee6f3e0;
     display: flex;
     flex-direction: column;
 }
-.titulo-contatoLocal{
+.tituloContatoLocal{
     font-size: 1.1em;
     font-family: Inter;
 }
-.endereco--redes{
+.inform__enderecoRedes{
     font-size: 1em;
     font-family: Inter;
 }
-.mens--extra{
+.mensExtra{
     font-family: Inter;
     font-size: 0.8em;
 }
-.containerWAInstaGeral{
+.secaoContatos__WAInstaGeral{
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.Inf-WAInsta{
+.containerWAInsta__inform{
     display: flex;
     align-items: center;
 }
-.Inf-WAInsta img{
+.inform__img{
     width: 25px;
 }
 .img--localizacao{
@@ -285,63 +294,4 @@ body{
     font-family: Inter;
     font-size: 0.8em;
     text-align: center;
-}
-
-@media (max-width:769px) {
-    #Secao--Header{
-        width: 100%;
-        max-width: 1280px;
-        height: 100vh;
-    }
-    #Menu--Mobile{
-        display: block;
-        position: absolute;
-        right: 10px;
-        z-index: 1000;
-    }
-    #Menu--Lista{
-        position: absolute;
-        width: 50vw;
-        top: 0;
-        right: 0;
-        background-color: white;
-        transition: ;
-        display: block;
-        height: 100vh;
-        z-index: 500;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-    #Inicio--Menu.active #Menu--Lista {
-        visibility: visible;
-    }
-    #conteudoHeader{
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-   #conteudoHeader--txt{
-    width: 400px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #471e59;
-    }
-    #conteudoHeader--txt h1{
-    font-family: yellowtail;
-    font-size: 2.5em;
-    }
-    #conteudoHeader--txt p{
-    font-family: inter;
-    font-size: 1em;
-    }
-    #conteudoHeader--img img{
-        width: 450px;
-    }
-    #inicio--Efeito{
-        width: 100vw;
-        height: 14;
-    }
 }
