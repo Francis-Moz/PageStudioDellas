@@ -65,32 +65,33 @@ body{
 }
 #conteudoHeader{
     width: 87%;
-    /*max-width: 1034px;*/
+    height: 43%;
     position: absolute;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 #conteudoHeader__txt{
-    width: 470px;
-    height: 230px;
+    width: 45%;
+    height: 100%;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #471e59;
 }
 #conteudoHeader__img{
     margin-right: 10px;
 }
 #conteudoHeader__txt h1{
     font-family: yellowtail;
-    font-size: 3em;
+    font-size: 4em;
+    color: #471e59;
 }
 #conteudoHeader__txt p{
     font-family: inter;
-    font-size: 1em;
+    font-size: 0.9em;
+    font-weight: 300;
 }
 #conteudoHeader__imgOnda{
     position: absolute;
@@ -120,14 +121,14 @@ body{
     justify-content: space-between;
 }
 .especialidades{
-    width: 190px;
+    width: 170px;
     height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .especialidades__img{
-    width: 190px;
+    width: 170px;
 }
 .especialidades__titulo{
     font-size: 1em;
@@ -158,20 +159,26 @@ body{
     justify-content: space-between;
 }
 #secaoQuemSomos__img{
-    width: 392px;
+    width: 360px;
     box-shadow: 4px 4px 4px #6c2d88;
 }
 #secaoQuemSomos__txt{
     width: 515px;
-    font-size: 1em;
+    position: relative;
     font-family:Istok Web;
+    font-size: 1em;
+    font-weight: 500;
 }
-#secaoQuemSomos__linha{
-    width: 275px;
-    height: 2px;
-    background-color :#6c2d88;
+#secaoQuemSomos__txt p{
+    position: relative;
+    z-index: 2;
 }
-
+#secaoQuemSomos__imgtxt{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
 /* ESTILO O QUE MAIS FAZEMOS */
 
 #secaoOQueMaisFazemos{
