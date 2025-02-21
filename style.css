@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items:  center;
-    background-color: #fee6f3;
+    background-image: linear-gradient( to bottom, #fee6f3 7%, #ffffff 50%, #fee6f3)
 }
 #containerConteudoBody{
     width: 100%;
@@ -29,7 +29,6 @@ body{
 }
 #header__menu{
     width: 87%;
-    /*max-width: 1034px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +40,6 @@ body{
 }
 #menu__lista{
     width: 50%;
-    /*max-width: 600px;*/
     padding: 0px 10px;
     display: flex;
     flex-direction: row;
@@ -85,6 +83,7 @@ body{
 }
 #conteudoHeader__txt h1{
     font-family: yellowtail;
+    font-weight: 500;
     font-size: 4em;
     color: #471e59;
 }
@@ -293,9 +292,6 @@ body{
 .inform__img{
     width: 25px;
 }
-.localizacao__mapa{
-    max-width: 480px;
-}
 #desenvolvedor{
     width: 90%;
     padding-top: 15px;
@@ -304,4 +300,98 @@ body{
     font-family: Inter;
     font-size: 0.8em;
     text-align: center;
+}
+@media screen and (max-width: 993px) {
+    /* ESTILO DO BODY E HEADER */ 
+
+    #conteudoHeader{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    #header__logo{
+        width: 120px;
+    }
+    #conteudoHeader__img img{
+        width: 400px;
+    }
+    #conteudoHeader__txt h1{
+        font-family: yellowtail;
+        font-size: 3.2em;
+        color: #471e59;
+    }
+    #conteudoHeader__txt p{
+        font-family: inter;
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    /* ESTILO NOSSA ESPECIALIDADE */
+
+    .Secao__titulo{
+        font-size: 1.6em;
+    }
+    .especialidades{
+        width: 150px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .especialidades__img{
+        width: 150px;
+    }
+    /* ESTILO QUEM SOMOS */
+
+    #secaoQuemSomos__img{
+        width: 300px;
+        box-shadow: 4px 4px 4px #6c2d88;
+    }
+    #secaoQuemSomos__txt{
+        width: 350px;
+        font-size: 0.9em;
+    }
+    #secaoQuemSomos__imgtxt{
+        width: 250px;
+    }
+    
+    /* ESTILO CONTATOS*/
+    #secaoContatos{
+        width: 100%;
+        height: 90vh;
+    }
+    #secaoContatos__container{
+        width: 87%;
+        height: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: space-around;
+    }
+    .tituloContatoLocal{
+        font-size: 1em;
+    }
+    #contatos{
+        width: 380px;
+        height: 280px;
+        background-image: url(Assets/logoMedio.png);
+        background-size: cover;
+    }
+    .inform__enderecoRedes{
+        font-size: 0.9em;
+    }
+    #secaoContatos__imgFundo{
+        width: 380px;
+        height: 280px;
+    }
+    .localizacao__Mapa{
+        width: 380px;
+        height: 280px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 600px) {
+    
 }
