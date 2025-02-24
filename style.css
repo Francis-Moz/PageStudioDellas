@@ -204,6 +204,7 @@ body{
     top: 20px;
 }
 #secaoOQueMaisFazemos__container{
+    max-width: 1200px;
     width: 87%;
     height: 362px;
     display: flex;
@@ -304,12 +305,6 @@ body{
 @media screen and (max-width: 993px) {
     /* ESTILO DO BODY E HEADER */ 
 
-    #conteudoHeader{
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-    }
     #header__logo{
         width: 120px;
     }
@@ -354,7 +349,28 @@ body{
     #secaoQuemSomos__imgtxt{
         width: 250px;
     }
-    
+    /*ESTILO O QUE MAIS FAZEMOS */
+
+    #secaoOQueMaisFazemos__container{
+        max-width: 996px;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        overflow-x: auto;
+    }
+    .secaoOQueMaisFazemos__servicos{
+        width: 150px;
+        height: 275px;
+    }
+    .servicos__titulo{
+        font-size: 0.9em;
+    }
+    .servicos__img{
+        width: 150px;
+        height: 242px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }    
     /* ESTILO CONTATOS*/
     #secaoContatos{
         width: 100%;
@@ -389,8 +405,48 @@ body{
     }
 
 }
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 767px) {
+      /* ESTILO DO BODY E HEADER */ 
+      #header{
+        height: 100vh;
+      }  
+      #conteudoHeader{
+        width: 85%;
+        height: 65vh;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    #header__logo{
+        width: 90px;
+    }
+    #conteudoHeader__img{
+        align-self:flex-end;
+    }
+    #conteudoHeader__img img{
+        width: 400px;
+    }
+    #conteudoHeader__txt{
+        width: 60%;
+        height: 40%;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #conteudoHeader__txt h1{
+        font-family: yellowtail;
+        font-size: 3.2em;
+        color: #471e59;
+    }
+    #conteudoHeader__txt p{
+        font-family: inter;
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    #conteudoHeader__imgOnda{
+        width: 100%;    
+    }
 }
 @media screen and (max-width: 600px) {
     
