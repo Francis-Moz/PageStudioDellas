@@ -20,7 +20,7 @@ body{
 #header{
     width: 100%;
     max-width: 1280px;
-    height: 850px;
+    height: 105vh;
     background-color: #fee6f3;
     display: flex;
     justify-content: center;
@@ -63,7 +63,8 @@ body{
 }
 #conteudoHeader{
     width: 87%;
-    height: 43%;
+    height: 45%;
+    top: 20%;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -104,10 +105,13 @@ body{
     font-size: 2em;
     font-family: inria serif;
     color: #6c2d88;
+    position: absolute;
+    top:10%;
 }
 #secaoNossaEspecialidade{
     max-width: 1280px;
-    height:800px;
+    height: 100vh;
+    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,6 +122,7 @@ body{
     width: 87%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .especialidades{
     width: 170px;
@@ -145,7 +150,7 @@ body{
 
 #secaoQuemSomos{
     max-width: 1280px;
-    height:800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +187,7 @@ body{
 
 #secaoOQueMaisFazemos{
     width: 100%;
-    height: 600px;
+    height: 90vh;
     background-image: url(Assets/trabalhoUnhas.jpg);
     background-size: cover;
     background-position: center center; 
@@ -191,7 +196,7 @@ body{
 }
 #secaoOQueMaisFazemos__fundobranco{
     width: 100%;
-    height: 600px;
+    height: 90vh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -200,8 +205,7 @@ body{
     background-color: #ffffff8e;
 }
 #secaoOQueMaisFazemos__fundobranco h3{
-    position: absolute;
-    top: 20px;
+    top: 5%;
 }
 #secaoOQueMaisFazemos__container{
     max-width: 1200px;
@@ -214,7 +218,7 @@ body{
     align-self: flex-end;
 }
 .secaoOQueMaisFazemos__servicos{
-    width: 155px;
+    width: 165px;
     height: 280px;
     background-color: black;
     border-radius: 10px;
@@ -232,7 +236,7 @@ body{
     text-align: center;
 }
 .servicos__img{
-    width: 155px;
+    width: 165px;
     height: 242px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -242,12 +246,20 @@ body{
 
 #secaoContatos{
     width: 100%;
-    height: 600px;
+    height: 100vh;
     background-color: #fee6f3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    position: relative;
+}
+.Secao__titulo__contatos{
+    text-align: center;
+    font-size: 2em;
+    font-family: inria serif;
+    color: #6c2d88;
+    top:10%;
 }
 #secaoContatos__container{
     width: 87%;
@@ -303,7 +315,7 @@ body{
     text-align: center;
 }
 @media screen and (max-width: 993px) {
-    /* ESTILO DO BODY E HEADER */ 
+    /* ESTILO DO BODY E HEADER SCREEN TABLET */ 
 
     #header__logo{
         width: 120px;
@@ -321,7 +333,7 @@ body{
         font-size: 0.7em;
         font-weight: 300;
     }
-    /* ESTILO NOSSA ESPECIALIDADE */
+    /* ESTILO NOSSA ESPECIALIDADE SCREEN TABLET */
 
     .Secao__titulo{
         font-size: 1.6em;
@@ -336,7 +348,7 @@ body{
     .especialidades__img{
         width: 150px;
     }
-    /* ESTILO QUEM SOMOS */
+    /* ESTILO QUEM SOMOS SCREEN TABLET */
 
     #secaoQuemSomos__img{
         width: 300px;
@@ -349,7 +361,7 @@ body{
     #secaoQuemSomos__imgtxt{
         width: 250px;
     }
-    /*ESTILO O QUE MAIS FAZEMOS */
+    /*ESTILO O QUE MAIS FAZEMOS SCREEN TABLET */
 
     #secaoOQueMaisFazemos__container{
         max-width: 996px;
@@ -371,7 +383,7 @@ body{
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }    
-    /* ESTILO CONTATOS*/
+    /* ESTILO CONTATOS SCREEN TABLET */
     #secaoContatos{
         width: 100%;
         height: 90vh;
@@ -406,7 +418,7 @@ body{
 
 }
 @media screen and (max-width: 767px) {
-      /* ESTILO DO BODY E HEADER */ 
+      /* ESTILO DO BODY E HEADER SCREEN CELULAR*/ 
       #header{
         height: 100vh;
       }  
@@ -447,7 +459,24 @@ body{
     #conteudoHeader__imgOnda{
         width: 100%;    
     }
+    /*ESTILO QUEM SOMOS SCREEN CELULAR*/
+    #secaoQuemSomos__Container{
+        width: 87%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #secaoQuemSomos__img{
+        width: 280px;
+    }
+    #secaoQuemSomos__txt{
+        width: 280px;
+        position: relative;
+        font-family:Istok Web;
+        font-size: 1em;
+        font-weight: 500;
+    }
 }
 @media screen and (max-width: 600px) {
-    
+
 }
