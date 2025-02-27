@@ -110,7 +110,7 @@ body{
 }
 #secaoNossaEspecialidade{
     max-width: 1280px;
-    height: 100vh;
+    min-height:768px;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@ body{
 
 #secaoQuemSomos{
     max-width: 1280px;
-    height: 100vh;
+    min-height: 768px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,7 +187,7 @@ body{
 
 #secaoOQueMaisFazemos{
     width: 100%;
-    height: 90vh;
+    min-height: 768px;
     background-image: url(Assets/trabalhoUnhas.jpg);
     background-size: cover;
     background-position: center center; 
@@ -196,7 +196,7 @@ body{
 }
 #secaoOQueMaisFazemos__fundobranco{
     width: 100%;
-    height: 90vh;
+    min-height: 768px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -478,5 +478,40 @@ body{
     }
 }
 @media screen and (max-width: 600px) {
-
+       /* ESTILO DO BODY E HEADER SCREEN CELULAR MENOR*/ 
+      #conteudoHeader{
+        width: 85%;
+        height: 60vh;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    #header__logo{
+        width: 80px;
+    }
+    #conteudoHeader__img img{
+        width: 300px;
+    }
+    #conteudoHeader__txt{
+        width: 70%;
+    }
+    #conteudoHeader__txt h1{
+        font-size: 2.6em;
+    }
+    /* ESTILO NOSSA ESPECIALIDADE SCREEN TABLET */
+    #secaoNossaEspecialidade{
+        height: 1200px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    #secaoNossaEspecialidade__Container{
+        width: 87%;
+        display: flex;
+        flex-direction: column;
+    }
 }
