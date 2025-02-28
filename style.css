@@ -27,39 +27,10 @@ body{
     align-items: center;
     position: relative;
 }
-#header__menu{
-    width: 87%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-}
-#header__button--mobile{
-    display: none;
-}
-#menu__lista{
-    width: 50%;
-    padding: 0px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-.menu__item{
-    font-family:inter;
-    font-size: 0.75em;
-}
-.menu__item a{
-    text-decoration: none;
-    color: #471e59;
-    font-weight: 600;
-    padding-block:16px;
-    opacity:(0);
-}
 #header__logo{
     width: 150px;
+    position: absolute;
+    top: 0px;
 }
 #conteudoHeader{
     width: 87%;
@@ -106,12 +77,11 @@ body{
     font-family: inria serif;
     color: #6c2d88;
     position: absolute;
-    top:10%;
+    top:5%;
 }
 #secaoNossaEspecialidade{
     max-width: 1280px;
     min-height:768px;
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,6 +121,10 @@ body{
 #secaoQuemSomos{
     max-width: 1280px;
     min-height: 768px;
+    background-image: url(Assets/imgbkgd02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,10 +135,10 @@ body{
     width: 87%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #secaoQuemSomos__img{
     width: 360px;
-    box-shadow: 4px 4px 4px #6c2d88;
 }
 #secaoQuemSomos__txt{
     width: 515px;
@@ -188,23 +162,14 @@ body{
 #secaoOQueMaisFazemos{
     width: 100%;
     min-height: 768px;
-    background-image: url(Assets/trabalhoUnhas.jpg);
-    background-size: cover;
-    background-position: center center; 
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #ffffff , #fee6f3);
     position: relative;
-}
-#secaoOQueMaisFazemos__fundobranco{
-    width: 100%;
-    min-height: 768px;
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff8e;
 }
-#secaoOQueMaisFazemos__fundobranco h3{
+#secaoOQueMaisFazemos h3{
     top: 5%;
 }
 #secaoOQueMaisFazemos__container{
@@ -220,8 +185,9 @@ body{
 .secaoOQueMaisFazemos__servicos{
     width: 165px;
     height: 280px;
-    background-color: black;
-    border-radius: 10px;
+    background-color: #fee6f3;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -232,14 +198,12 @@ body{
     margin-top: 7px;
     font-size: 1em;
     font-family: inria serif;
-    color: #ffffff;
     text-align: center;
 }
 .servicos__img{
     width: 165px;
-    height: 242px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    height: 230px;
+    border-bottom-left-radius: 15px;
 }
 
 /* ESTILO CONTATOS*/
@@ -324,12 +288,9 @@ body{
         width: 400px;
     }
     #conteudoHeader__txt h1{
-        font-family: yellowtail;
         font-size: 3.2em;
-        color: #471e59;
     }
     #conteudoHeader__txt p{
-        font-family: inter;
         font-size: 0.7em;
         font-weight: 300;
     }
@@ -352,7 +313,6 @@ body{
 
     #secaoQuemSomos__img{
         width: 300px;
-        box-shadow: 4px 4px 4px #6c2d88;
     }
     #secaoQuemSomos__txt{
         width: 350px;
@@ -479,6 +439,7 @@ body{
 }
 @media screen and (max-width: 600px) {
        /* ESTILO DO BODY E HEADER SCREEN CELULAR MENOR*/ 
+
       #conteudoHeader{
         width: 85%;
         height: 60vh;
@@ -499,19 +460,99 @@ body{
     #conteudoHeader__txt h1{
         font-size: 2.6em;
     }
-    /* ESTILO NOSSA ESPECIALIDADE SCREEN TABLET */
+    /* ESTILO NOSSA ESPECIALIDADE SCREEN CELULAR MENOR */
+
     #secaoNossaEspecialidade{
-        height: 1200px;
-        background-color: aquamarine;
+        height: 1300px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         position: relative;
     }
     #secaoNossaEspecialidade__Container{
         width: 87%;
+        height: 94%;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
+    .Secao__titulo{
+        top:3%;
+    }
+    .especialidades{
+        width: 150px;
+        height: 260px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* ESTILO QUEM SOMOS SCREEN CELULAR MENOR */
+
+    #secaoQuemSomos{
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+    }
+    #secaoQuemSomos__Container{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #secaoQuemSomos__img{
+        width: 280px;
+    }
+    #secaoQuemSomos__txt{
+        width: 280px;
+        position: relative;
+        font-family:Istok Web;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    /* ESTILO O QUE MAIS FAZEMOS CELULAR MENOR */
+    .secaoOQueMaisFazemos__servicos--down{
+        align-self: auto;
+    }
+
+    /* ESTILO CONTATO CELULAR MENOR */
+    #secaoContatos{
+        width: 100%;
+        height: 100vh;
+    }
+    #secaoContatos__container{
+        width: 95%;
+        height: 75%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: space-around;
+    }
+    .tituloContatoLocal{
+        font-size: 1em;
+    }
+    #contatos{
+        width: 360px;
+        height: 280px;
+        background-image: url(Assets/logoMedio.png);
+        background-size: cover;
+    }
+    .inform__enderecoRedes{
+        font-size: 0.9em;
+    }
+    #secaoContatos__imgFundo{
+        width: 360px;
+        height: 260px;
+    }
+    .localizacao__Mapa{
+        width: 360px;
+        height: 260px;
+    }
+    
 }
