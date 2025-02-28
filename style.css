@@ -262,6 +262,12 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+.linkInstagramWA{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
 .containerWAInsta__inform{
     display: flex;
     align-items: center;
@@ -538,7 +544,7 @@ body{
         font-size: 1em;
     }
     #contatos{
-        width: 360px;
+        width: 320px;
         height: 280px;
         background-image: url(Assets/logoMedio.png);
         background-size: cover;
@@ -547,11 +553,11 @@ body{
         font-size: 0.9em;
     }
     #secaoContatos__imgFundo{
-        width: 360px;
+        width: 320px;
         height: 260px;
     }
     .localizacao__Mapa{
-        width: 360px;
+        width: 320px;
         height: 260px;
     }
     
