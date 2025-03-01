@@ -540,6 +540,7 @@ body{
         flex-direction: column-reverse;
         align-content: space-around;
     }
+   
     .tituloContatoLocal{
         font-size: 1em;
     }
@@ -548,6 +549,11 @@ body{
         height: 280px;
         background-image: url(Assets/logoMedio.png);
         background-size: cover;
+    }
+    #secaoContatos__imgFundo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .inform__enderecoRedes{
         font-size: 0.9em;
@@ -560,5 +566,4 @@ body{
         width: 320px;
         height: 260px;
     }
-    
 }
