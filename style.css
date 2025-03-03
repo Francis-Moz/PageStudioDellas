@@ -333,7 +333,7 @@ body{
         max-width: 996px;
         display: grid;
         gap: 18px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         overflow-x: auto;
     }
     .secaoOQueMaisFazemos__servicos{
@@ -545,7 +545,7 @@ body{
     }
     #contatos{
         width: 320px;
-        height: 250px;
+        height: 245px;
         background-image: url(Assets/logoMedio.png);
         background-size: cover;
     }
