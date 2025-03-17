@@ -244,8 +244,8 @@ body{
     background-position: center;
 }
 .backgroundColor{
-    height: 85%;
-    background-color: yellow;
+    height: 86%;
+    background-color: #fee6f3cc;
     display: flex;
     flex-direction: column;
     justify-content:space-between ;
