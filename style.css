@@ -20,7 +20,7 @@ body{
 #header{
     width: 100%;
     max-width: 1280px;
-    height: 110vh;
+    height: 120vh;
     background-color: #fee6f3;
     display: flex;
     justify-content: center;
