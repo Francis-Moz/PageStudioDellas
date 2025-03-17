@@ -20,7 +20,7 @@ body{
 #header{
     width: 100%;
     max-width: 1280px;
-    height: 105vh;
+    height: 110vh;
     background-color: #fee6f3;
     display: flex;
     justify-content: center;
@@ -121,7 +121,7 @@ body{
 #secaoQuemSomos{
     max-width: 1280px;
     min-height: 768px;
-    background-image: url(Assets/imgbkgd02.jpg);
+    background-image: url(Assets/novobackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -225,55 +225,78 @@ body{
     color: #6c2d88;
     top:10%;
 }
-#secaoContatos__container{
+#secaoContatosLocalizacao__container{
     width: 87%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#contatos{
-    width: 500px;
-    height: 310px;
-    background-image: url(Assets/logoMedio.png);
+.titulosSecoes__contatos{
+    font-family:sans-serif ;
+    font-size: 1rem;
+}
+.contatos1{
+    width: 37%;
+    height: 80%;
+    background-image: url(/Assets/logoMedio.png);
+    background-repeat: no-repeat;
     background-position: center;
 }
-#secaoContatos__imgFundo{
-    width: 500px;
-    height: 310px;
-    background-color: #fee6f3e0;
+.backgroundColor{
+    height: 80%;
+    background-color: #fee6f3d7;
     display: flex;
     flex-direction: column;
+    justify-content:space-between ;
 }
-.tituloContatoLocal{
-    font-size: 1.1em;
-    font-family: Inter;
-}
-.inform__enderecoRedes{
-    font-size: 1em;
-    font-family: Inter;
-}
-.mensExtra{
-    font-family: Inter;
-    font-size: 0.8em;
-}
-.secaoContatos__WAInstaGeral{
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.linkInstagramWA{
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-    font-weight: 550;
-}
-.containerWAInsta__inform{
+.anuncioWhatsInsta{
     display: flex;
     align-items: center;
 }
-.inform__img{
+.anuncioWhatsInsta img{
     width: 25px;
+    margin-right: 20px;
+}
+.anuncioWhatsInsta p{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+.contatoProfissional__namenumber{
+    display: flex;
+    justify-content: space-between;
+}
+.nomeProfissional{
+    font-family: sans-serif;
+    font-weight: 550;
+}
+.numeroProfissional{
+    text-decoration: none;
+    color: black;
+    font-weight: 560;
+}
+.especialidadeProfissional{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+.contatos2{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.linksInstagram{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.linksInstagram a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 560;
+    color: black;
+
 }
 #desenvolvedor{
     width: 90%;
@@ -284,6 +307,12 @@ body{
     font-size: 0.8em;
     text-align: center;
 }
+#desenvolvedor a{
+    text-decoration: none;
+    color: black;
+}
+/*CONFIGURAÇÕES DE RESPONSIVIDADE*/
+
 @media screen and (max-width: 993px) {
     /* ESTILO DO BODY E HEADER SCREEN TABLET */ 
 
@@ -353,32 +382,12 @@ body{
         width: 100%;
         height: 90vh;
     }
-    #secaoContatos__container{
+    #secaoContatosLocalizacao__container{
         width: 87%;
         height: 80%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-content: space-around;
     }
     .tituloContatoLocal{
         font-size: 1em;
-    }
-    #contatos{
-        width: 380px;
-        height: 280px;
-        background-image: url(Assets/logoMedio.png);
-        background-size: cover;
-    }
-    .inform__enderecoRedes{
-        font-size: 0.9em;
-    }
-    #secaoContatos__imgFundo{
-        width: 380px;
-        height: 280px;
-    }
-    .localizacao__Mapa{
-        width: 380px;
-        height: 280px;
     }
 
 }
@@ -530,37 +539,19 @@ body{
     /* ESTILO CONTATO CELULAR MENOR */
     #secaoContatos{
         width: 100%;
-        height: 100vh;
+        height: 120vh;
     }
-    #secaoContatos__container{
+    #secaoContatosLocalizacao__container{
         width: 95%;
-        height: 75%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-content: space-around;
-    }
-   
-    .tituloContatoLocal{
-        display: none;
-    }
-    #contatos{
-        width: 320px;
-        height: 245px;
-        background-image: url(Assets/logoMedio.png);
-        background-size: cover;
-    }
-    #secaoContatos__imgFundo{
-        width: 320px;
-        height: 200px;
+        height: 85%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
-    .inform__enderecoRedes{
-        font-size: 0.9em;
-    }
-    .localizacao__Mapa{
-        width: 320px;
-        height: 260px;
-    }
+   .contatos1{
+    width: 100%;
+   }
+   iframe{
+    margin: auto;
+   }
 }
