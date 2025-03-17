@@ -543,17 +543,17 @@ body{
     }
     #secaoContatosLocalizacao__container{
         width: 95%;
-        height: 85%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
    .contatos1{
     width: 95%;
-    height: 90%;
+    height: 85%;
    }
    .backgroundColor {
-    height: 90%;
+    height: 85%;
    }
    .contatos2{
     width: 95%;
