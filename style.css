@@ -539,7 +539,7 @@ body{
     /* ESTILO CONTATO CELULAR MENOR */
     #secaoContatos{
         width: 100%;
-        height: 115vh;
+        height: 125vh;
     }
     #secaoContatosLocalizacao__container{
         width: 95%;
@@ -550,14 +550,15 @@ body{
     }
    .contatos1{
     width: 95%;
-    height: 85%;
+    height: 60%;
    }
    .backgroundColor {
-    height: 90%;
+    justify-content: space-around;
+    height: 100%;
    }
    .contatos2{
     width: 95%;
-    height: 650px;
+    height: 500px;
    }
    .containerLocalizacao{
     display: flex;
