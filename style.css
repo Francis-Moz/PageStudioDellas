@@ -550,7 +550,10 @@ body{
     }
    .contatos1{
     width: 95%;
-    height: 88%;
+    height: 90%;
+   }
+   .backgroundColor {
+    height: 90%;
    }
    .contatos2{
     width: 95%;
